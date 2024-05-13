@@ -24,6 +24,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'andre_madarang@hotmail.com',
         ]);
 
+        User::factory()->create([
+            'name' => 'Admin Admin',
+            'email' => 'admin@admin.com',
+        ]);
+
         User::factory(19)->create();
 
         Category::factory()->create(['name' => 'Category 1']);
